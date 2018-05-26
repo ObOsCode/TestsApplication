@@ -1,0 +1,272 @@
+/*Medium*/
+@font-face {
+    font-family: "SansPro";
+    src: url(fonts/PFAgoraSansPro-Medium.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Bold*/
+@font-face {
+    font-family: "SansPro";
+    src: url(fonts/PFAgoraSansPro-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+/*Medium Italis*/
+@font-face {
+    font-family: "SansPro";
+    src: url(fonts/PFAgoraSansPro-MediumItal.ttf);
+    font-weight: normal;
+    font-style: italic;
+}
+
+/*Regular*/
+@font-face {
+    font-family: "SansPro";
+    src: url(fonts/PFAgoraSansPro-Reg.ttf);
+    font-style: normal;
+    font-weight: 300;
+}
+
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    font-family: SansPro, serif;
+    width: 960px;
+    color: #2d2d2d;
+
+    background-color: #f9f9f9;
+
+    /*width: 980px;*/
+    /*background-image: url(images/site.jpg);*/
+    /*background-position: top center;*/
+    /*background-position-y: -40px;*/
+}
+
+
+h1{
+    width: 940px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+}
+
+a, a:visited{
+    color: #0366d6;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+hr{
+    color: #cacaca;
+    background-color: #cacaca;
+    border: 0px none;
+    height: 1px;
+    clear: both;
+}
+
+.green_button{
+
+    height: 30px;
+    color: white;
+    background: #3ab54a;
+    background: linear-gradient(to top, #3ab54a, #50d862);
+    border: 1px solid #3ab54a;
+    border-left-width: 2px;
+    text-shadow: #58ab62 -1px -1px 0px;
+    cursor: pointer;
+    /* -webkit-border-radius: 5px; */
+    /* border-radius: 0px; */
+}
+
+
+a.green_button{
+    display: block;
+    color: white;
+    text-align: center;
+    width: 150px;
+    line-height: 30px;
+}
+
+a.green_button:hover{
+    text-decoration: none;
+}
+
+
+div.content_wrapper
+{
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+}
+
+
+/*Forms*/
+
+form.user_form{
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+}
+
+form.user_form label{
+    display: block;
+    width: 300px;
+    /*border: 1px solid #eaeaea;*/
+}
+
+form.user_form input[type=text], form.user_form input[type=password], form.user_form input[type=email]{
+    display: block;
+    width: 300px;
+    margin-bottom: 20px;
+    border: 1px solid #eaeaea;
+    height: 30px;
+    padding: 10px;
+    font-size: 14px;
+    color: #4c4c4c;
+}
+
+form.user_form input[type=submit]{
+    width: 150px;
+    float: right;
+    /*cursor: pointer;*/
+}
+
+form.user_form a{
+    /*margin-top: 10px;*/
+    line-height: 30px;
+}
+
+
+
+
+/*TestsList*/
+
+ul#tests_list
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul#tests_list li.chet{
+    background-color: #f9f9f9;
+}
+
+ul#tests_list li.nechet{
+    background-color: #f1f1f1;
+}
+
+ul#tests_list li ul{
+    list-style: none;
+    height: 40px;
+    /*background-color: #ececec;*/
+    padding: 10px;
+}
+
+ul#tests_list li ul li{
+    display: inline-block;
+    line-height: 40px;
+}
+
+ul#tests_list li ul li.name{
+    width: 585px;
+    text-align: left;
+    /*border: 1px solid;*/
+}
+
+ul#tests_list li ul li.questions_count{
+    width: 150px;
+    text-align: center;
+    /*border: 1px solid;*/
+}
+
+ul#tests_list li ul li.action_button{
+    width: 150px;
+    /*text-align: center;*/
+    /*border: 1px solid;*/
+}
+
+
+
+/*Question*/
+
+form#question_form p.answer{
+    padding: 10px;
+    margin: 0;
+}
+
+form#question_form p.answer:hover{
+    background-color: #e8e8e8;
+}
+
+form#question_form a{
+    float: right;
+    margin-right: 40px;
+    border-bottom: 1px dashed #0366d6;
+}
+
+form#question_form a:hover{
+    text-decoration: none;
+}
+
+/*Header*/
+
+div#header_wrapper {
+    overflow: hidden;
+}
+
+header div#app_info {
+    float: left;
+}
+
+header div#login_menu {
+    float: right;
+}
+
+header div#app_info p#name{
+    font-size: 25px;
+    color: #0366d6;
+    margin: 10px 0 0 0;
+}
+
+header div#app_info p#description{
+    font-size: 16px;
+    margin: 5px 0 0 5px;
+    color:#000000;
+}
+
+header div#login_menu p{
+    margin-top: 35px;
+    color:#000000;
+}
+
+
+/*Footer*/
+
+footer {
+    position: fixed; /* Фиксированное положение */
+    left: 0; bottom: 0; /* Левый нижний угол */
+    padding: 10px; /* Поля вокруг текста */
+    background: #39b54a; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
+}
+
+footer hr{
+    color: #5ba465;
+    background-color: #72c97d;
+    border: 0px none;
+    height: 1px;
+    clear: both;
+    border-top: 1px solid #5ba465;
+}

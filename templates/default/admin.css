@@ -1,0 +1,99 @@
+body{
+
+    /*background-color: #edecf8;*/
+}
+
+
+/*Add test form*/
+
+form#add_test{
+    padding-top: 14px;
+}
+
+form#add_test label{
+    font-size: 16px;
+}
+
+form#add_test input[type=text]{
+    width: 739px;
+    font-size: 22px;
+    padding: 5px;
+}
+
+form#add_test input.green_button{
+    width: 100px;
+    height: 40px;
+    float: right;
+}
+
+
+/*Add question form*/
+
+form#add_question textarea{
+    width: 100%;
+    margin: 10px 0px 20px 0px;
+    min-height: 44px;
+}
+
+form#add_question input[type=text]{
+    width: 260px;
+    margin: 5px;
+    padding: 5px;
+
+}
+
+form#add_question ul{
+    list-style-type:decimal;
+}
+
+
+form#add_question p{
+    width: 100%;
+    text-align: center;
+}
+
+
+form.add_question input.green_button{
+    width: 130px;
+}
+
+
+/*Questions list*/
+
+ul#admin_questions_list li{
+    padding: 10px;
+}
+
+ul#admin_questions_list li ul.answers_list li{
+    display: block;
+}
+
+ul#admin_questions_list li ul.answers_list li.correct{
+    color: blue;
+}
+
+ul#admin_questions_list li ul.answers_list{
+    list-style: decimal;
+}
+
+ul#admin_questions_list li a.green_button{
+    width: 120px;
+}
+
+
+/*Statistic menu*/
+
+p#statistic_menu{
+    text-align: center;
+}
+
+p#statistic_menu a{
+    margin: 0 10px;
+    padding: 10px;
+}
+
+p#statistic_menu a.current{
+    background-color: #3ab54a;
+    color: #ffffff;
+}
+
